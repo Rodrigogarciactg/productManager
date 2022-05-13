@@ -42,11 +42,57 @@
   justify-content: space-around;
   height: 2.5rem;
   width: 20rem;
-  background-color: #cacaca;
+  background-color: #a6facc;
   border-radius: 0.2rem;
 }
 .form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.product {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 2.5rem;
+  width: 20rem;
+  background-color: #94e1ff;
+  border-radius: 0.2rem;
+  margin: 1rem;
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.btnContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn {
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(250, 202, 112);
+  border-radius: 0.3rem;
+  border-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #282c34;
+}
+.btn1 {
+  width: 6rem;
+  height: 2rem;
+  background-color: rgb(250, 191, 235);
+  border-radius: 0.3rem;
+  border-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #282c34;
 }

@@ -14,11 +14,23 @@ const Detail = (props) => {
       })
       .catch((err) => console.log(err));
   }, []);
+
+  // const { removeFromDom } = props;
+  // const deleteProduct = () => {
+  //   axios
+  //     .delete("http://localhost:8000/api/products/" + id)
+  //     .then((res) => {
+  //       removeFromDom(id);
+  //     })
+  //     .catch((err) => console.log(err));
+  // };
+
   return (
     <div>
       <p>Product : {product.title}</p>
       <p>Price : {product.price}</p>
       <p>Description : {product.description}</p>
+      {/* <button onClick={deleteProduct}>Delete</button> */}
     </div>
   );
 };

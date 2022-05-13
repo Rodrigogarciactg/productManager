@@ -52,7 +52,7 @@ const ProductForm = (props) => {
           value={description}
         />
       </p>
-      <input type="submit" className="submit" value="create" />
+      <input type="submit" className="btn1" value="create" />
     </form>
   );
 };
