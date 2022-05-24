@@ -11,14 +11,15 @@ const ProductList = (props) => {
       })
       .catch((err) => console.log(err));
   };
-
+  console.log(product);
   return (
     <div className="product">
       {product.map((product, index) => {
         return (
           <div key={index}>
             <Link className="tabs" to={"/products/" + product._id}>
-              {product.title}, {product.price}, {product.description}
+              {product.title}, {product.price}, {product.description},
+              {product.reasons}
             </Link>
             <div className="btnContainer">
               <Link className="btn" to={"/products/edit/" + product._id}>

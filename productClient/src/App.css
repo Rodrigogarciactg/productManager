@@ -96,3 +96,9 @@
   text-decoration: none;
   color: #282c34;
 }
+.reasons {
+  height: 4.5rem;
+  width: 20rem;
+  background-color: #a6facc;
+  border-radius: 0.2rem;
+}

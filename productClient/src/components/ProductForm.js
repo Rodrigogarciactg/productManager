@@ -5,6 +5,9 @@ const ProductForm = (props) => {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
+  const [reasons, setReasons] = useState("");
+  // const [reason2, setReason2] = useState("");
+
   const onSubmitHandler = (e) => {
     e.preventDefault();
     axios
@@ -12,6 +15,7 @@ const ProductForm = (props) => {
         title,
         price,
         description,
+        reasons,
       })
       .then((res) => {
         console.log(res);
@@ -20,6 +24,8 @@ const ProductForm = (props) => {
         setTitle("");
         setPrice("");
         setDescription("");
+        setReasons("");
+        // setReason2("");
       })
       .catch((err) => console.log(err));
   };
@@ -50,6 +56,21 @@ const ProductForm = (props) => {
           type="text"
           onChange={(e) => setDescription(e.target.value)}
           value={description}
+        />
+      </p>
+      <p className="reasons">
+        <label> Reasons</label>
+        <br />
+        <input
+          type="text"
+          onChange={(e) => setReasons(e.target.value)}
+          value={reasons}
+        />
+        <br />
+        <input
+          type="text"
+          onChange={(e) => setReasons(e.target.value)}
+          value={reasons}
         />
       </p>
       <input type="submit" className="btn1" value="create" />

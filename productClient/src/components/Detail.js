@@ -30,6 +30,7 @@ const Detail = (props) => {
       <p>Product : {product.title}</p>
       <p>Price : {product.price}</p>
       <p>Description : {product.description}</p>
+      <p>Reasons : {product.reasons}</p>
       {/* <button onClick={deleteProduct}>Delete</button> */}
     </div>
   );

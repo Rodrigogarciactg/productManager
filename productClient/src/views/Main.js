@@ -8,7 +8,7 @@ const Main = () => {
     axios.get("http://localhost:8000/api/products/").then((res) => {
       setProduct(res.data);
     });
-  });
+  },[]);
   const removeFromDom = (productId) => {
     setProduct(product.filter((product) => product._id != productId));
   };

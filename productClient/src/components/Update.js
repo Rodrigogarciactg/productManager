@@ -6,6 +6,7 @@ const Update = (props) => {
   const [title, setTitle] = useState();
   const [price, setPrice] = useState();
   const [description, setDescription] = useState();
+  const [reasons, setReasons] = useState();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -37,6 +38,7 @@ const Update = (props) => {
         title,
         price,
         description,
+        reasons,
       })
       .then((res) => {
         console.log(res);
@@ -81,6 +83,18 @@ const Update = (props) => {
             value={description}
             onChange={(e) => {
               setDescription(e.target.value);
+            }}
+          />
+        </p>
+        <p>
+          <label> Reasons</label>
+          <br />
+          <input
+            type="text"
+            name="reasons"
+            value={reasons}
+            onChange={(e) => {
+              setReasons(e.target.value);
             }}
           />
         </p>
